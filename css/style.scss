@@ -3,6 +3,7 @@
 @import "variables";
 @import "media";
 @import "animations";
+@import "shoe-prints";
 
 @mixin flexCenter {
   display: flex;
@@ -207,9 +208,25 @@ header {
 .about-wcs {
   background-color: rgb(204, 209, 205);
   padding: 40px;
+  display: flex;
+  gap: 40px;
+
+  .our-photo {
+    max-width: 600px;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.25px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+  }
 
   ul {
     list-style-type: circle;
+    margin-top: 1.25em;
+    margin-left: 2em;
   }
   p {
     margin-top: 1.25em;

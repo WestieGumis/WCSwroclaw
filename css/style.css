@@ -265,6 +265,41 @@ img {
     transform: translateY(0px) rotate(90deg);
   }
 }
+.shoe-prints {
+  position: relative;
+  width: 200px;
+}
+.shoe-prints > :nth-child(1) {
+  transform: rotate(15deg);
+}
+.shoe-prints > :nth-child(2) {
+  transform: rotate(-15deg) scaleX(-1);
+}
+
+.shoe-print {
+  fill: rgb(0, 0, 0);
+  stroke: rgb(0, 0, 0);
+  -webkit-animation: show-shoe-print 4s ease infinite;
+          animation: show-shoe-print 4s ease infinite;
+}
+
+@-webkit-keyframes show-shoe-print {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes show-shoe-print {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
 h1,
 h2,
 h3,
@@ -437,9 +472,24 @@ header div button {
 .about-wcs {
   background-color: rgb(204, 209, 205);
   padding: 40px;
+  display: flex;
+  gap: 40px;
+}
+.about-wcs .our-photo {
+  max-width: 600px;
+}
+.about-wcs h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.25px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
 }
 .about-wcs ul {
   list-style-type: circle;
+  margin-top: 1.25em;
+  margin-left: 2em;
 }
 .about-wcs p {
   margin-top: 1.25em;
